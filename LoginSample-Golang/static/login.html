@@ -1,0 +1,21 @@
+{{ define "login" }}
+<!DOCTYPE html>
+<html lang="en">
+{{ template "header" }}
+<body>
+    {{ template "navbar" }}
+    <h1>Login</h1>
+    <form method="POST">
+        <div class="container">
+            <section class="inputs">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Enter your email please">
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Enter your password">
+                <button type="submit">Login</button>
+            </section>
+        </div>
+    </form>
+</body>
+</html>
+{{ end }}
